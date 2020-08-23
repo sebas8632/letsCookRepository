@@ -9,9 +9,9 @@
 import UIKit
 
 class RecipesListViewController: BaseViewController {
-
+    
     private var recipesListUseCase: RecipesListUseCaseProtocol?
-   
+    
     var recipes: [RecipeDTO]?
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -33,7 +33,7 @@ class RecipesListViewController: BaseViewController {
     private func searchBarConfig() {
         searchBar.backgroundImage = nil
     }
-
+    
     private func getRecipes() {
         guard let useCase = self.recipesListUseCase else {
             errorManager(error: NetworkError.internalError)
@@ -53,6 +53,13 @@ class RecipesListViewController: BaseViewController {
         }
     }
     
+    private func showRecipeDetail(id: Int) {
+        let recipeDetailVC = RecipeDetailViewController()
+        recipeDetailVC.idRecipe = id
+        recipeDetailVC.modalPresentationStyle = .fullScreen
+        self.show(recipeDetailVC, sender: nil)
+    }
+    
 }
 
 
@@ -69,17 +76,22 @@ extension RecipesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as! RecipeTableViewCell
         if let recipes = self.recipes {
-             cell.recipeName.text = recipes[indexPath.row].title
+            cell.recipeName.text = recipes[indexPath.row].title
         } else {
             self.errorManager(error: NetworkError.internalError)
         }
-       
+        
         return cell
     }
 }
 
 extension RecipesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO
+        if let recipes = self.recipes {
+            let id = recipes[indexPath.row].id
+            self.showRecipeDetail(id: id)
+        } else {
+            self.errorManager(error: NetworkError.internalError)
+        }
     }
 }

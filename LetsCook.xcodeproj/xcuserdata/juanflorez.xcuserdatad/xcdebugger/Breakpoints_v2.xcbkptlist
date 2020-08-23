@@ -7,16 +7,96 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "669115C1-4D1A-4DED-BE6D-919FC5D39C6E"
+            uuid = "DD655FFD-F37D-4799-A75D-B2C697977051"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LetsCook/Presentation/RecipesList/RecipesListViewController.swift"
+            filePath = "LetsCook/Presentation/RecipeDetail/RecipeDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "getRecipes()"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getRecipeDetail()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D632273-204C-4208-92EA-F746B9213AC1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LetsCook/Presentation/RecipeDetail/RecipeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "getRecipeDetail()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B235A6A7-2A47-4C10-AD31-18A37C36415E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LetsCook/Presentation/RecipeDetail/RecipeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getRecipeDetail()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B235A6A7-2A47-4C10-AD31-18A37C36415E - 23bc77bed7270172"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LetsCook.RecipeDetailViewController.(getRecipeDetail in _2CC1C96934C43F392E662A515046816F)() -&gt; ()"
+                  moduleName = "LetsCook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanflorez/Documents/personal/proyectos/LetsCook/LetsCook/Presentation/RecipeDetail/RecipeDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "373">
+               </Location>
+               <Location
+                  uuid = "B235A6A7-2A47-4C10-AD31-18A37C36415E - a22b738338c7e21e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LetsCook.RecipeDetailDTO) -&gt; LetsCook.RecipeDetailDTO in LetsCook.RecipeDetailViewController.(getRecipeDetail in _2CC1C96934C43F392E662A515046816F)() -&gt; ()"
+                  moduleName = "LetsCook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juanflorez/Documents/personal/proyectos/LetsCook/LetsCook/Presentation/RecipeDetail/RecipeDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "049CF9E8-DF60-4977-BA94-609506BC5360"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LetsCook/Presentation/RecipeDetail/RecipeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "getRecipeDetail()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
