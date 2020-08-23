@@ -10,5 +10,5 @@ import Foundation
 
 protocol RecipesListRepositoryProtocol {
     
-    func getRecipesList(completion: @escaping((Result<RecipeDTO, Error>) -> Void))
+    func getRecipesList(completion: @escaping((Result<[RecipeDTO], NetworkError>) -> Void))
 }

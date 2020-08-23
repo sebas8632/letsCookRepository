@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6745511324F2D07D000D777F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745511224F2D07D000D777F /* AppDelegate.swift */; };
 		6745511524F2D07D000D777F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745511424F2D07D000D777F /* SceneDelegate.swift */; };
-		6745511724F2D07D000D777F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745511624F2D07D000D777F /* ViewController.swift */; };
+		6745511724F2D07D000D777F /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745511624F2D07D000D777F /* RecipesListViewController.swift */; };
 		6745511A24F2D07D000D777F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6745511824F2D07D000D777F /* Main.storyboard */; };
 		6745511C24F2D07D000D777F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6745511B24F2D07D000D777F /* Assets.xcassets */; };
 		6745511F24F2D07D000D777F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6745511D24F2D07D000D777F /* LaunchScreen.storyboard */; };
@@ -22,6 +22,10 @@
 		6745515124F2D864000D777F /* AppEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745515024F2D864000D777F /* AppEndpoints.swift */; };
 		6745515324F2D91A000D777F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745515224F2D91A000D777F /* Network.swift */; };
 		6745515524F2D94E000D777F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745515424F2D94E000D777F /* NetworkError.swift */; };
+		6745515724F2DB75000D777F /* RecipesListUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745515624F2DB75000D777F /* RecipesListUseCaseProtocol.swift */; };
+		6745515924F2DBCE000D777F /* RecipesListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745515824F2DBCE000D777F /* RecipesListUseCase.swift */; };
+		6745515B24F2DEFA000D777F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745515A24F2DEFA000D777F /* BaseViewController.swift */; };
+		6745515D24F2E649000D777F /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745515C24F2E649000D777F /* RecipeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 		6745510F24F2D07D000D777F /* LetsCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6745511224F2D07D000D777F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6745511424F2D07D000D777F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6745511624F2D07D000D777F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6745511624F2D07D000D777F /* RecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
 		6745511924F2D07D000D777F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6745511B24F2D07D000D777F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6745511E24F2D07D000D777F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,10 @@
 		6745515024F2D864000D777F /* AppEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEndpoints.swift; sourceTree = "<group>"; };
 		6745515224F2D91A000D777F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		6745515424F2D94E000D777F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		6745515624F2DB75000D777F /* RecipesListUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListUseCaseProtocol.swift; sourceTree = "<group>"; };
+		6745515824F2DBCE000D777F /* RecipesListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListUseCase.swift; sourceTree = "<group>"; };
+		6745515A24F2DEFA000D777F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6745515C24F2E649000D777F /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +108,6 @@
 				6745513424F2D2BC000D777F /* Data */,
 				6745511224F2D07D000D777F /* AppDelegate.swift */,
 				6745511424F2D07D000D777F /* SceneDelegate.swift */,
-				6745511624F2D07D000D777F /* ViewController.swift */,
-				6745511824F2D07D000D777F /* Main.storyboard */,
 				6745511B24F2D07D000D777F /* Assets.xcassets */,
 				6745511D24F2D07D000D777F /* LaunchScreen.storyboard */,
 				6745512024F2D07D000D777F /* Info.plist */,
@@ -141,6 +147,7 @@
 			children = (
 				6745514124F2D400000D777F /* RecipeDetail */,
 				6745514024F2D3DD000D777F /* RecipesList */,
+				6745515A24F2DEFA000D777F /* BaseViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -186,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				6745513F24F2D39F000D777F /* Protocols */,
+				6745515824F2DBCE000D777F /* RecipesListUseCase.swift */,
 			);
 			path = RecipesListUseCase;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 		6745513F24F2D39F000D777F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				6745515624F2DB75000D777F /* RecipesListUseCaseProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -215,6 +224,9 @@
 		6745514024F2D3DD000D777F /* RecipesList */ = {
 			isa = PBXGroup;
 			children = (
+				6745511624F2D07D000D777F /* RecipesListViewController.swift */,
+				6745511824F2D07D000D777F /* Main.storyboard */,
+				6745515C24F2E649000D777F /* RecipeTableViewCell.swift */,
 			);
 			path = RecipesList;
 			sourceTree = "<group>";
@@ -362,14 +374,18 @@
 			files = (
 				6745515324F2D91A000D777F /* Network.swift in Sources */,
 				6745514D24F2D7BA000D777F /* RecipesListRepository.swift in Sources */,
-				6745511724F2D07D000D777F /* ViewController.swift in Sources */,
+				6745511724F2D07D000D777F /* RecipesListViewController.swift in Sources */,
 				6745511324F2D07D000D777F /* AppDelegate.swift in Sources */,
 				6745514F24F2D807000D777F /* RecipesListMockRepository.swift in Sources */,
+				6745515B24F2DEFA000D777F /* BaseViewController.swift in Sources */,
+				6745515D24F2E649000D777F /* RecipeTableViewCell.swift in Sources */,
+				6745515924F2DBCE000D777F /* RecipesListUseCase.swift in Sources */,
 				6745514B24F2D6AC000D777F /* RecipeDetailDTO.swift in Sources */,
 				6745511524F2D07D000D777F /* SceneDelegate.swift in Sources */,
 				6745515124F2D864000D777F /* AppEndpoints.swift in Sources */,
 				6745514924F2D658000D777F /* RecipeDTO.swift in Sources */,
 				6745515524F2D94E000D777F /* NetworkError.swift in Sources */,
+				6745515724F2DB75000D777F /* RecipesListUseCaseProtocol.swift in Sources */,
 				6745514724F2D526000D777F /* RecipesListRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

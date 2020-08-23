@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RecipeDetailDTO {
+struct RecipeDetailDTO: Codable {
     
     var id: String
     var title: String

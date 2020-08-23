@@ -10,8 +10,20 @@ import Foundation
 
 class RecipesListRepository: RecipesListRepositoryProtocol {
     
-    func getRecipesList(completion: @escaping ((Result<RecipeDTO, Error>) -> Void)) {
+    private var network: Network
+    
+    init() {
+        network = Network()
+    }
+    
+    func getRecipesList(completion: @escaping ((Result<[RecipeDTO], NetworkError>) -> Void)) {
         
+        let baseUrl = AppEndpoints.baseUrl
+        let endPoint = Endpoint.recipes
+        
+        let path: String = "\(baseUrl)\(endPoint)"
+        
+        network.request(endPoint: path, method: .GET, completion: completion)
     }
     
     
