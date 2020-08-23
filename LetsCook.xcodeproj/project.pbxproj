@@ -79,6 +79,9 @@
 		6745511124F2D07D000D777F /* LetsCook */ = {
 			isa = PBXGroup;
 			children = (
+				6745513624F2D2D3000D777F /* Presentation */,
+				6745513524F2D2CE000D777F /* Domain */,
+				6745513424F2D2BC000D777F /* Data */,
 				6745511224F2D07D000D777F /* AppDelegate.swift */,
 				6745511424F2D07D000D777F /* SceneDelegate.swift */,
 				6745511624F2D07D000D777F /* ViewController.swift */,
@@ -97,6 +100,107 @@
 				6745512B24F2D07D000D777F /* Info.plist */,
 			);
 			path = LetsCookTests;
+			sourceTree = "<group>";
+		};
+		6745513424F2D2BC000D777F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6745513824F2D319000D777F /* Network */,
+				6745513724F2D301000D777F /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6745513524F2D2CE000D777F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6745513A24F2D341000D777F /* UseCases */,
+				6745513924F2D334000D777F /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6745513624F2D2D3000D777F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6745514124F2D400000D777F /* RecipeDetail */,
+				6745514024F2D3DD000D777F /* RecipesList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6745513724F2D301000D777F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6745513824F2D319000D777F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6745513924F2D334000D777F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6745513A24F2D341000D777F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6745513D24F2D387000D777F /* RecipeDetailUseCase */,
+				6745513C24F2D37D000D777F /* RecipesListUseCase */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		6745513C24F2D37D000D777F /* RecipesListUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				6745513F24F2D39F000D777F /* Protocols */,
+			);
+			path = RecipesListUseCase;
+			sourceTree = "<group>";
+		};
+		6745513D24F2D387000D777F /* RecipeDetailUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				6745513E24F2D397000D777F /* Protocols */,
+			);
+			path = RecipeDetailUseCase;
+			sourceTree = "<group>";
+		};
+		6745513E24F2D397000D777F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6745513F24F2D39F000D777F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6745514024F2D3DD000D777F /* RecipesList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecipesList;
+			sourceTree = "<group>";
+		};
+		6745514124F2D400000D777F /* RecipeDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecipeDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
